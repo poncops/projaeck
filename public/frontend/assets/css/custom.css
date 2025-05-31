@@ -1,0 +1,14 @@
+/* custom */
+span.category-name {
+    transition: 0.4s;
+}
+.category-card:hover span.category-name {
+    top: 45% !important;
+}
+
+.bg-breadcrumb{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:150px 0px 160px 0px;
+}
