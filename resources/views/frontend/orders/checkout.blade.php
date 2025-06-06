@@ -69,6 +69,7 @@
 								<div class="checkout-form-list">
 									<label>Kota<span class="required">*</span></label>
 									<select name="city_id" id="city-id" value="{{ auth()->user()->city_id }}" >
+										<option value="">- Please Select -</option>
 											@foreach($cities as $id => $city)
 											<option {{ auth()->user()->city_id == $id ? 'selected' : null }} value="{{ $id }}">{{ $city }}</option>
 											@endforeach

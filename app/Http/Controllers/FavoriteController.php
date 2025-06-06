@@ -44,7 +44,7 @@ class FavoriteController extends Controller
 			->where('product_id', $product->id)
 			->first();
 		if ($favorite) {
-			return response('You have added this product to your favorite before', 422);
+			return response('Anda telah menambahkan produk ini ke favorit Anda sebelumnya', 422);
 		}
 
 		Favorite::create(
@@ -54,7 +54,7 @@ class FavoriteController extends Controller
 			]
 		);
 
-		return response('The product has been added to your favorite', 200);
+		return response('Produk telah ditambahkan ke favorit Anda', 200);
     }
 
     /**
