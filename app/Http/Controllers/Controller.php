@@ -67,6 +67,28 @@ class Controller extends BaseController
 		return json_decode($response->getBody(), true);
     }
     
+// 	protected function rajaOngkirRequest($resource, $params = [], $method = 'GET'){
+//     $client = new \GuzzleHttp\Client();
+
+//     $headers = ['Authorization' => $this->rajaOngkirApiKey]; // <- disesuaikan
+//     $requestParams = [
+//         'headers' => $headers,
+//     ];
+
+//     $url = $this->rajaOngkirBaseUrl . $resource;
+
+//     if ($params && $method === 'POST') {
+//         $requestParams['form_params'] = $params;
+//     } elseif ($params && $method === 'GET') {
+//         $query = is_array($params) ? '?' . http_build_query($params) : '';
+//         $url .= $query;
+//     }
+
+//     $response = $client->request($method, $url, $requestParams);
+
+//     return json_decode($response->getBody(), true);
+// }
+
     /**
 	 * Get provinces
 	 *

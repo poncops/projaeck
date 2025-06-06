@@ -58,7 +58,7 @@
 								<div class="checkout-form-list">
 									<label>Provinsi<span class="required">*</span></label>
 									<select name="province_id"id="province-id" value="{{ auth()->user()->province_id }}">
-											<option value="">- Please Select -</option>
+											<option value="">- Silakan Pilih -</option>
 											@foreach($provinces as $province => $pro)
 											<option {{ auth()->user()->province_id == $province ? 'selected' : null }} value="{{ $province }}">{{ $pro }}</option>
 											@endforeach
@@ -69,7 +69,6 @@
 								<div class="checkout-form-list">
 									<label>Kota<span class="required">*</span></label>
 									<select name="city_id" id="city-id" value="{{ auth()->user()->city_id }}" >
-										<option value="">- Please Select -</option>
 											@foreach($cities as $id => $city)
 											<option {{ auth()->user()->city_id == $id ? 'selected' : null }} value="{{ $id }}">{{ $city }}</option>
 											@endforeach
